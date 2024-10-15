@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="User_DataBaseDataSet" targetNamespace="http://tempuri.org/User_DataBaseDataSet.xsd" xmlns:mstns="http://tempuri.org/User_DataBaseDataSet.xsd" xmlns="http://tempuri.org/User_DataBaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="User_DataBaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="User_DataBaseConnectionString (Settings)" PropertyReference="ApplicationSettings.gym_management.Properties.Settings.GlobalReference.Default.User_DataBaseConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_cyclingTableAdapter" GeneratorDataComponentClassName="tbl_cyclingTableAdapter" Name="tbl_cycling" UserDataComponentName="tbl_cyclingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="User_DataBaseConnectionString (Settings)" DbObjectName="tbl_cycling" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, duration_min, intensity, distance, calorie_burn, u_name, date_time FROM tbl_cycling</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_ropeJumpTableAdapter" GeneratorDataComponentClassName="tbl_ropeJumpTableAdapter" Name="tbl_ropeJump" UserDataComponentName="tbl_ropeJumpTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="User_DataBaseConnectionString (Settings)" DbObjectName="tbl_ropeJump" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, duration_min, intensity, jump_num, calorie_burn, u_name, date_time FROM tbl_ropeJump</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_strengthTableAdapter" GeneratorDataComponentClassName="tbl_strengthTableAdapter" Name="tbl_strength" UserDataComponentName="tbl_strengthTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="User_DataBaseConnectionString (Settings)" DbObjectName="tbl_strength" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, duration_min, intensity, type_exer, calorie_burn, u_name, date_time FROM tbl_strength</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_swimmingTableAdapter" GeneratorDataComponentClassName="tbl_swimmingTableAdapter" Name="tbl_swimming" UserDataComponentName="tbl_swimmingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="User_DataBaseConnectionString (Settings)" DbObjectName="tbl_swimming" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, num_laps, time_taken, avg_heartRate, calorie_burn, u_name, date_time FROM tbl_swimming</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_user_profileTableAdapter" GeneratorDataComponentClassName="tbl_user_profileTableAdapter" Name="tbl_user_profile" UserDataComponentName="tbl_user_profileTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="User_DataBaseConnectionString (Settings)" DbObjectName="tbl_user_profile" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT u_fname, u_age, u_weight, u_height, u_gender, u_ID, date_time, u_name, update_date, cal_goal FROM tbl_user_profile</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_walkingTableAdapter" GeneratorDataComponentClassName="tbl_walkingTableAdapter" Name="tbl_walking" UserDataComponentName="tbl_walkingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="User_DataBaseConnectionString (Settings)" DbObjectName="tbl_walking" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, steps_taken, distance_cover, time_taken, calorie_burn, u_name, date_time FROM tbl_walking</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_yogaTableAdapter" GeneratorDataComponentClassName="tbl_yogaTableAdapter" Name="tbl_yoga" UserDataComponentName="tbl_yogaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="User_DataBaseConnectionString (Settings)" DbObjectName="tbl_yoga" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, duration_min, intensity, yoga_type, calorie_burn, u_name, date_time FROM tbl_yoga</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="user_loginTableAdapter" GeneratorDataComponentClassName="user_loginTableAdapter" Name="user_login" UserDataComponentName="user_loginTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="User_DataBaseConnectionString (Settings)" DbObjectName="user_login" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT u_id, u_name, u_password, u_Squestion, u_Sanswer, u_locked FROM user_login</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="User_DataBaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="User_DataBaseDataSet" msprop:Generator_DataSetName="User_DataBaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_cycling" msprop:Generator_RowEvHandlerName="tbl_cyclingRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_cyclingRowDeleted" msprop:Generator_RowDeletingName="tbl_cyclingRowDeleting" msprop:Generator_RowEvArgName="tbl_cyclingRowChangeEvent" msprop:Generator_TablePropName="tbl_cycling" msprop:Generator_RowChangedName="tbl_cyclingRowChanged" msprop:Generator_RowChangingName="tbl_cyclingRowChanging" msprop:Generator_TableClassName="tbl_cyclingDataTable" msprop:Generator_RowClassName="tbl_cyclingRow" msprop:Generator_TableVarName="tabletbl_cycling" msprop:Generator_UserTableName="tbl_cycling">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_ropeJump" msprop:Generator_RowEvHandlerName="tbl_ropeJumpRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_ropeJumpRowDeleted" msprop:Generator_RowDeletingName="tbl_ropeJumpRowDeleting" msprop:Generator_RowEvArgName="tbl_ropeJumpRowChangeEvent" msprop:Generator_TablePropName="tbl_ropeJump" msprop:Generator_RowChangedName="tbl_ropeJumpRowChanged" msprop:Generator_RowChangingName="tbl_ropeJumpRowChanging" msprop:Generator_TableClassName="tbl_ropeJumpDataTable" msprop:Generator_RowClassName="tbl_ropeJumpRow" msprop:Generator_TableVarName="tabletbl_ropeJump" msprop:Generator_UserTableName="tbl_ropeJump">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_strength" msprop:Generator_RowEvHandlerName="tbl_strengthRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_strengthRowDeleted" msprop:Generator_RowDeletingName="tbl_strengthRowDeleting" msprop:Generator_RowEvArgName="tbl_strengthRowChangeEvent" msprop:Generator_TablePropName="tbl_strength" msprop:Generator_RowChangedName="tbl_strengthRowChanged" msprop:Generator_RowChangingName="tbl_strengthRowChanging" msprop:Generator_TableClassName="tbl_strengthDataTable" msprop:Generator_RowClassName="tbl_strengthRow" msprop:Generator_TableVarName="tabletbl_strength" msprop:Generator_UserTableName="tbl_strength">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_swimming" msprop:Generator_RowEvHandlerName="tbl_swimmingRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_swimmingRowDeleted" msprop:Generator_RowDeletingName="tbl_swimmingRowDeleting" msprop:Generator_RowEvArgName="tbl_swimmingRowChangeEvent" msprop:Generator_TablePropName="tbl_swimming" msprop:Generator_RowChangedName="tbl_swimmingRowChanged" msprop:Generator_RowChangingName="tbl_swimmingRowChanging" msprop:Generator_TableClassName="tbl_swimmingDataTable" msprop:Generator_RowClassName="tbl_swimmingRow" msprop:Generator_TableVarName="tabletbl_swimming" msprop:Generator_UserTableName="tbl_swimming">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_user_profile" msprop:Generator_RowEvHandlerName="tbl_user_profileRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_user_profileRowDeleted" msprop:Generator_RowDeletingName="tbl_user_profileRowDeleting" msprop:Generator_RowEvArgName="tbl_user_profileRowChangeEvent" msprop:Generator_TablePropName="tbl_user_profile" msprop:Generator_RowChangedName="tbl_user_profileRowChanged" msprop:Generator_RowChangingName="tbl_user_profileRowChanging" msprop:Generator_TableClassName="tbl_user_profileDataTable" msprop:Generator_RowClassName="tbl_user_profileRow" msprop:Generator_TableVarName="tabletbl_user_profile" msprop:Generator_UserTableName="tbl_user_profile">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_walking" msprop:Generator_RowEvHandlerName="tbl_walkingRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_walkingRowDeleted" msprop:Generator_RowDeletingName="tbl_walkingRowDeleting" msprop:Generator_RowEvArgName="tbl_walkingRowChangeEvent" msprop:Generator_TablePropName="tbl_walking" msprop:Generator_RowChangedName="tbl_walkingRowChanged" msprop:Generator_RowChangingName="tbl_walkingRowChanging" msprop:Generator_TableClassName="tbl_walkingDataTable" msprop:Generator_RowClassName="tbl_walkingRow" msprop:Generator_TableVarName="tabletbl_walking" msprop:Generator_UserTableName="tbl_walking">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_yoga" msprop:Generator_RowEvHandlerName="tbl_yogaRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_yogaRowDeleted" msprop:Generator_RowDeletingName="tbl_yogaRowDeleting" msprop:Generator_RowEvArgName="tbl_yogaRowChangeEvent" msprop:Generator_TablePropName="tbl_yoga" msprop:Generator_RowChangedName="tbl_yogaRowChanged" msprop:Generator_RowChangingName="tbl_yogaRowChanging" msprop:Generator_TableClassName="tbl_yogaDataTable" msprop:Generator_RowClassName="tbl_yogaRow" msprop:Generator_TableVarName="tabletbl_yoga" msprop:Generator_UserTableName="tbl_yoga">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="user_login" msprop:Generator_RowEvHandlerName="user_loginRowChangeEventHandler" msprop:Generator_RowDeletedName="user_loginRowDeleted" msprop:Generator_RowDeletingName="user_loginRowDeleting" msprop:Generator_RowEvArgName="user_loginRowChangeEvent" msprop:Generator_TablePropName="user_login" msprop:Generator_RowChangedName="user_loginRowChanged" msprop:Generator_RowChangingName="user_loginRowChanging" msprop:Generator_TableClassName="user_loginDataTable" msprop:Generator_RowClassName="user_loginRow" msprop:Generator_TableVarName="tableuser_login" msprop:Generator_UserTableName="user_login">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
